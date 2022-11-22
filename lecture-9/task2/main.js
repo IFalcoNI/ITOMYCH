@@ -1,31 +1,32 @@
 // cmd
 // DAY=monday node main.js
-import schedule from './schedule.js'
+// const { monday, tuesday, wednesday, thursday, friday, saturday, sunday } = schedule
+// import schedule from './schedule.js'
+
 const day = process.env.DAY
-const { monday, tuesday, wednesday, thursday, friday, saturday, sunday } = schedule
 switch (day) {
     case 'monday':
-        console.log(monday);
+        import('./days/monday.js');
         break;
     case 'tuesday':
-        console.log(tuesday);
+        import('./days/tuesday.js');
         break;
     case 'wednesday':
-        console.log(wednesday);
+        import('./days/wednesday.js');
         break;
     case 'thursday':
-        console.log(thursday);
+        import('./days/thursday.js');
         break;
     case 'friday':
-        console.log(friday);
+        import('./days/friday.js');
         break;
     case 'saturday':
-        console.log(saturday);
+        import('./days/saturday.js');
         break;
     case 'sunday':
-        console.log(sunday);
+        import('./days/sunday.js');
         break;
     default:
-        console.log("Wrong day name");
+        import("Wrong day name");
         break;
 }
