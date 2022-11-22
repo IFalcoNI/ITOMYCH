@@ -1,7 +1,7 @@
 // cmd
-// MODULE_NAME=monday node main.js
+// DAY=monday node main.js
 import schedule from './schedule.js'
-const day = process.env.MODULE_NAME
+const day = process.env.DAY
 const { monday, tuesday, wednesday, thursday, friday, saturday, sunday } = schedule
 switch (day) {
     case 'monday':
